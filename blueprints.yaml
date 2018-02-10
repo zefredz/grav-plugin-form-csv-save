@@ -1,0 +1,31 @@
+name: Form Csv Save
+version: 0.1.0
+description: Save form submission to csv file
+icon: plug
+author:
+  name: zefredz
+  email: zefredz@gmail.com
+homepage: https://github.com/zefredz/grav-plugin-form-csv-save
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/zefredz/grav-plugin-form-csv-save/issues
+docs: https://github.com/zefredz/grav-plugin-form-csv-save/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+    text_var:
+      type: text
+      label: Text Variable
+      help: Text to add to the top of a page
